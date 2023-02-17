@@ -36,9 +36,7 @@ function pName(id){
 // show date
 function showData(serial, productName, newValue){
     const tableData = `
-    <p>${serial}</p>
-    <p>${productName}</p>
-    <p>${newValue}</p>
+    <p>${serial}. ${productName}     ${newValue}</p>
     `
     return tableData;
 }

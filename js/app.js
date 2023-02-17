@@ -8,7 +8,12 @@ document.getElementById('btn-circle').addEventListener('click', function(){
     const productName = pName('triangle');
 
     // display data
-    
+    const getTable = document.getElementById('table');
+
+    // create element
+    const createNewElement = document.createElement('p');
+    createNewElement.innerHTML = showData(serial, productName, newValue);
+    getTable.appendChild(createNewElement);
     
 
 });
@@ -19,5 +24,4 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     const circleInputTwo = getInputValueOne('rectangle-input-two');
 
     const newValue = calcAreaTwoInput(circleInputOne, circleInputTwo);
-    console.log(newValue);
 });
