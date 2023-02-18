@@ -49,247 +49,292 @@
     <main>
       <section class="container mt-5">
         <div class="row">
-            <div class="col-9">
-                <div class="row">
-                <!-- circle -->
-                <div class="col col-md-4">
-                    <div class="card" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/triangle.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+          <div class="col-9">
+            <div class="row">
+              <!-- circle -->
+              <div class="col col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/triangle.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="triangle" class="card-title">Triangle</h5>
+                    <p class="card-text">Area (A) = 0.5 * b * h</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >b</span
+                        >
+                        <input
+                          id="circle-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 id="triangle" class="card-title">Triangle</h5>
-                        <p class="card-text">Area (A) = 0.5 * b * h</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">b</span>
-                            <input
-                            id="circle-input-one"
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">h</span>
-                            <input
-                            id="circle-input-two"
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" id="btn-circle" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Rectangle -->
-                  <div class="col col-md-4">
-                    <div class="card" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/rectangle.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >h</span
+                        >
+                        <input
+                          id="circle-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Rectangle</h5>
-                        <p class="card-text">Area  (A) = w * l</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">w</span>
-                            <input
-                            id="rectangle-input-one"
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">l</span>
-                            <input
-                            id="rectangle-input-two"
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" id="rectangle-btn" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
+                    </form>
+                    <a href="#" id="btn-circle" class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
                   </div>
-                  <!-- Parallelogram -->
-                  <div class="col col-md-4">
-                    <div class="card" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/parallelogram.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+                </div>
+              </div>
+              <!-- Rectangle -->
+              <div class="col col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/rectangle.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="rectangle" class="card-title">Rectangle</h5>
+                    <p class="card-text">Area (A) = w * l</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >w</span
+                        >
+                        <input
+                          id="rectangle-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Parallelogram</h5>
-                        <p class="card-text">Area (A) = b * h</p>
-                        <p class="card-text">b=10cm, h=12cm</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">b</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">h</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Rhombus -->
-                  <div class="col col-md-4">
-                    <div class="card mt-3" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/rhombus.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >l</span
+                        >
+                        <input
+                          id="rectangle-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Rhombus</h5>
-                        <p class="card-text">Area (A) = 0.5 * d1 * d2</p>
-                        <p class="card-text">d1 = 16 cm  d2 = 8 cm</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">b</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">h</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
+                    </form>
+                    <a href="#" id="rectangle-btn" class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
                   </div>
-                  <!-- Pentagon -->
-                  <div class="col col-md-4">
-                    <div class="card mt-3" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/pentagon.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+                </div>
+              </div>
+              <!-- Parallelogram -->
+              <div class="col col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/parallelogram.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="parallelogram" class="card-title">Parallelogram</h5>
+                    <p class="card-text">Area (A) = b * h</p>
+                    <p class="card-text">b=10cm, h=12cm</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >b</span
+                        >
+                        <input
+                          id="parallelogram-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Pentagon</h5>
-                        <p class="card-text">Area (A) = 0.5 * p * b</p>
-                        <p class="card-text">p = 6 cm b = 10 cm</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">b</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">h</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Ellipse -->
-                  <div class="col col-md-4">
-                    <div class="card mt-3" style="width: 18rem">
-                      <div class="text-center">
-                        <img
-                          src="images/ellipse.png"
-                          class="card-img-top w-75 p-3 img-height"
-                          alt="..."
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >h</span
+                        >
+                        <input
+                          id="parallelogram-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
                         />
                       </div>
-                      <div class="card-body text-center">
-                        <h5 class="card-title">Ellipse</h5>
-                        <p class="card-text">Area (A) = PI(ab)</p>
-                        <p class="card-text">a = 10 cm b = 4 cm</p>
-                        <form action="" class="input-group">
-                          <div class="input-group mb-3 w-50 pe-2">
-                            <span class="input-group-text" id="basic-addon1">b</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                          <div class="input-group mb-3 w-50 ps-2">
-                            <span class="input-group-text" id="basic-addon1">h</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              aria-label="Username"
-                              aria-describedby="basic-addon1"
-                            />
-                          </div>
-                        </form>
-                        <a href="#" class="btn btn-primary w-100">Calculate</a>
-                      </div>
-                    </div>
+                    </form>
+                    <a
+                      href="#"
+                      id="parallelogram-btn"
+                      class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
                   </div>
+                </div>
+              </div>
+              <!-- Rhombus -->
+              <div class="col col-md-4">
+                <div class="card mt-3" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/rhombus.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="rhombus" class="card-title">Rhombus</h5>
+                    <p class="card-text">Area (A) = 0.5 * d1 * d2</p>
+                    <p class="card-text">d1 = 16 cm d2 = 8 cm</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >b</span
+                        >
+                        <input
+                          id="rhombus-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >h</span
+                        >
+                        <input
+                          id="rhombus-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </form>
+                    <a href="#" id="rhombus-btn" class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Pentagon -->
+              <div class="col col-md-4">
+                <div class="card mt-3" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/pentagon.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="pentagon" class="card-title">Pentagon</h5>
+                    <p class="card-text">Area (A) = 0.5 * p * b</p>
+                    <p class="card-text">p = 6 cm b = 10 cm</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >b</span
+                        >
+                        <input
+                          id="pentagon-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >h</span
+                        >
+                        <input
+                          id="pentagon-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </form>
+                    <a href="#" id="pentagon-btn" class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Ellipse -->
+              <div class="col col-md-4">
+                <div class="card mt-3" style="width: 18rem">
+                  <div class="text-center">
+                    <img
+                      src="images/ellipse.png"
+                      class="card-img-top w-75 p-3 img-height"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 id="ellipse" class="card-title">Ellipse</h5>
+                    <p class="card-text">Area (A) = PI(ab)</p>
+                    <p class="card-text">a = 10 cm b = 4 cm</p>
+                    <form action="" class="input-group">
+                      <div class="input-group mb-3 w-50 pe-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >b</span
+                        >
+                        <input
+                          id="ellipse-input-one"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3 w-50 ps-2">
+                        <span class="input-group-text" id="basic-addon1"
+                          >h</span
+                        >
+                        <input
+                          id="ellipse-input-two"
+                          type="text"
+                          class="form-control"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </form>
+                    <a href="#" id="ellipse-btn" class="btn btn-primary w-100"
+                      >Calculate</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- display div -->
           <div class="col col-md-3">
             <h4 class="fw-bold text-center">Area Calculation</h4>
-            <div id="table" class="table">
-                
-            </div>
+            <div id="table" class="table"></div>
           </div>
         </div>
       </section>
