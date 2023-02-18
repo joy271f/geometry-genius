@@ -1,7 +1,7 @@
 function calcAreaThreeInput(constantValue, firstInput, secondInput) {
-    if(isNaN(firstInput)){
+    if(isNaN(firstInput) || firstInput < 0){
         alert('type first number')
-    }else if(isNaN(secondInput)){
+    }else if(isNaN(secondInput) || secondInput < 0){
         alert('type second number')
     }else{
         return constantValue * firstInput * secondInput;
@@ -10,9 +10,9 @@ function calcAreaThreeInput(constantValue, firstInput, secondInput) {
 
 // for 2 input calculation
 function calcAreaTwoInput(firstInput, secondInput) {
-    if(isNaN(firstInput)){
+    if(isNaN(firstInput) || firstInput < 0){
         alert('type first number')
-    }else if(isNaN(secondInput)){
+    }else if(isNaN(secondInput) || secondInput < 0){
         alert('type second number')
     }else{
         return firstInput * secondInput;
@@ -61,4 +61,16 @@ function displayDataDinamic(serial, productName, newValue) {
   getTable.appendChild(createNewElement);
 
   return createNewElement;
+}
+
+
+
+// random color generate  
+function generateRandomColor(card){
+    document.getElementById(card).addEventListener('mouseenter', function(){
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.getElementById(card).style.backgroundColor = "#" + randomColor;
+        color.innerHTML = "#" + randomColor;
+    })
+    
 }

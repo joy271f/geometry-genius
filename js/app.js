@@ -72,3 +72,12 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   // display data
   displayDataDinamic(serial, productName, newValue.toFixed(2));
 });
+
+
+// call random function
+generateRandomColor('card1');
+generateRandomColor('card2');
+generateRandomColor('card3');
+generateRandomColor('card4');
+generateRandomColor('card5');
+generateRandomColor('card6');
