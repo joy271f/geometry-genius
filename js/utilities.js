@@ -1,11 +1,23 @@
-// for 3 input calculation
 function calcAreaThreeInput(constantValue, firstInput, secondInput) {
-  return constantValue * firstInput * secondInput;
+    if(isNaN(firstInput)){
+        alert('type first number')
+    }else if(isNaN(secondInput)){
+        alert('type second number')
+    }else{
+        return constantValue * firstInput * secondInput;
+    }
 }
 
 // for 2 input calculation
 function calcAreaTwoInput(firstInput, secondInput) {
-  return firstInput * secondInput;
+    if(isNaN(firstInput)){
+        alert('type first number')
+    }else if(isNaN(secondInput)){
+        alert('type second number')
+    }else{
+        return firstInput * secondInput;
+    }
+  
 }
 
 // get input value
@@ -34,7 +46,7 @@ function pName(id) {
 // show date
 function showData(serial, productName, newValue) {
   const tableData = `
-    <p>${serial}. ${productName}     ${newValue}</p>
+    <p>${serial}. ${productName}   ${newValue}cm<sup>2</sup></p>
     `;
   return tableData;
 }

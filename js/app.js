@@ -12,11 +12,11 @@ document.getElementById("btn-circle").addEventListener("click", function () {
 });
 
 document.getElementById("rectangle-btn").addEventListener("click", function () {
-  const circleInputOne = getInputValueOne("rectangle-input-one");
-  const circleInputTwo = getInputValueOne("rectangle-input-two");
+  const rectangleInputOne = getInputValueOne("rectangle-input-one");
+  const rectangleInputTwo = getInputValueOne("rectangle-input-two");
 
   serial += 1;
-  const newValue = calcAreaTwoInput(circleInputOne, circleInputTwo);
+  const newValue = calcAreaTwoInput(rectangleInputOne, rectangleInputTwo);
   const productName = pName("rectangle");
 
   // display data
@@ -26,11 +26,11 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
 document
   .getElementById("parallelogram-btn")
   .addEventListener("click", function () {
-    const circleInputOne = getInputValueOne("parallelogram-input-one");
-    const circleInputTwo = getInputValueOne("parallelogram-input-two");
+    const parallelogramInputOne = getInputValueOne("parallelogram-input-one");
+    const parallelogramInputTwo = getInputValueOne("parallelogram-input-two");
 
     serial += 1;
-    const newValue = calcAreaTwoInput(circleInputOne, circleInputTwo);
+    const newValue = calcAreaTwoInput(parallelogramInputOne, parallelogramInputTwo);
     const productName = pName("parallelogram");
 
     // display data
@@ -38,11 +38,11 @@ document
   });
 
 document.getElementById("rhombus-btn").addEventListener("click", function () {
-  const circleInputOne = getInputValueOne("rhombus-input-one");
-  const circleInputTwo = getInputValueOne("rhombus-input-two");
+  const rhombusInputOne = getInputValueOne("rhombus-input-one");
+  const rhombusInputTwo = getInputValueOne("rhombus-input-two");
 
   serial += 1;
-  const newValue = calcAreaThreeInput(0.5, circleInputOne, circleInputTwo);
+  const newValue = calcAreaThreeInput(0.5, rhombusInputOne, rhombusInputTwo);
   const productName = pName("rhombus");
 
   // display data
@@ -50,11 +50,11 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
 });
 
 document.getElementById("pentagon-btn").addEventListener("click", function () {
-  const circleInputOne = getInputValueOne("pentagon-input-one");
-  const circleInputTwo = getInputValueOne("pentagon-input-two");
+  const pentagonInputOne = getInputValueOne("pentagon-input-one");
+  const pentagonInputTwo = getInputValueOne("pentagon-input-two");
 
   serial += 1;
-  const newValue = calcAreaThreeInput(0.5, circleInputOne, circleInputTwo);
+  const newValue = calcAreaThreeInput(0.5, pentagonInputOne, pentagonInputTwo);
   const productName = pName("pentagon");
 
   // display data
@@ -62,11 +62,11 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
 });
 
 document.getElementById("ellipse-btn").addEventListener("click", function () {
-  const circleInputOne = getInputValueOne("ellipse-input-one");
-  const circleInputTwo = getInputValueOne("ellipse-input-two");
+  const ellipseInputOne = getInputValueOne("ellipse-input-one");
+  const ellipseInputTwo = getInputValueOne("ellipse-input-two");
 
   serial += 1;
-  const newValue = calcAreaThreeInput(3.14, circleInputOne, circleInputTwo);
+  const newValue = calcAreaThreeInput(3.14, ellipseInputOne, ellipseInputTwo);
   const productName = pName("ellipse");
 
   // display data
