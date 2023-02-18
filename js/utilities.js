@@ -1,24 +1,26 @@
 // three input calculation
 function calcAreaThreeInput(constantValue, firstInput, secondInput) {
-    if(isNaN(firstInput) || firstInput < 0){
-        alert('type first number')
-    }else if(isNaN(secondInput) || secondInput < 0){
-        alert('type second number')
-    }else{
-        return constantValue * firstInput * secondInput;
-    }
+  if (isNaN(firstInput) || firstInput < 0) {
+    alert("type first number");
+  } else if (isNaN(secondInput) || secondInput < 0) {
+    alert("type second number");
+  } else {
+    return constantValue * firstInput * secondInput;
+  }
 }
 
 // for 2 input calculation
 function calcAreaTwoInput(firstInput, secondInput) {
-    if(isNaN(firstInput) || firstInput < 0){
-        alert('type first number')
-    }else if(isNaN(secondInput) || secondInput < 0){
-        alert('type second number')
-    }else{
-        return firstInput * secondInput;
-    }
-  
+  if (isNaN(firstInput) || firstInput < 0) {
+    alert("type first number");
+    return false;
+  } else if (isNaN(secondInput) || secondInput < 0) {
+    alert("type second number");
+    return false;
+  } else {
+    return firstInput * secondInput;
+  }
+
 }
 
 // get input value
@@ -45,35 +47,30 @@ function pName(id) {
 }
 
 // show date
-function showData(serial, productName, newValue) {
+function showData(productName, newValue) {
   const tableData = `
-    <p>${serial}. ${productName}   ${newValue}cm<sup>2</sup></p>
+    ${++serial}. ${productName}   ${newValue}cm<sup>2</sup>
     `;
   return tableData;
 }
 
-function displayDataDinamic(serial, productName, newValue) {
+function displayDataDinamic(productName, newValue) {
   // display data
   const getTable = document.getElementById("table");
 
   // create element
   const createNewElement = document.createElement("p");
-  createNewElement.innerHTML = showData(serial, productName, newValue);
+  createNewElement.innerHTML = showData(productName, newValue);
   getTable.appendChild(createNewElement);
 
   return createNewElement;
 }
 
-
-
-// random color generate  
-function generateRandomColor(card){
-    document.getElementById(card).addEventListener('mouseenter', function(){
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        document.getElementById(card).style.backgroundColor = "#" + randomColor;
-        color.innerHTML = "#" + randomColor;
-    })
-    
+// random color generate
+function generateRandomColor(card) {
+  document.getElementById(card).addEventListener("mouseenter", function () {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.getElementById(card).style.backgroundColor = "#" + randomColor;
+    color.innerHTML = "#" + randomColor;
+  });
 }
-
-
