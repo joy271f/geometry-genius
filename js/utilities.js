@@ -1,3 +1,4 @@
+// three input calculation
 function calcAreaThreeInput(constantValue, firstInput, secondInput) {
     if(isNaN(firstInput) || firstInput < 0){
         alert('type first number')
@@ -74,3 +75,5 @@ function generateRandomColor(card){
     })
     
 }
+
+

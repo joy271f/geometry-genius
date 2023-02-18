@@ -74,6 +74,11 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
 });
 
 
+// redirect blog page
+document.getElementById('blog-btn').addEventListener('click', function(){
+  window.location.href = "blog.html";
+})
+
 // call random function
 generateRandomColor('card1');
 generateRandomColor('card2');
