@@ -1,7 +1,7 @@
 let serial = 0;
-document.getElementById("btn-circle").addEventListener("click", function () {
-  const circleInputOne = getInputValueOne("circle-input-one");
-  const circleInputTwo = getInputValueOne("circle-input-two");
+document.getElementById("triangle-btn").addEventListener("click", function () {
+  const circleInputOne = getInputValueOne("triangle-input-one");
+  const circleInputTwo = getInputValueOne("triangle-input-two");
 
   const newValue = calcAreaThreeInput(0.5, circleInputOne, circleInputTwo);
   const productName = pName("triangle");
